@@ -47,3 +47,43 @@ header {
     object-fit: cover;
     margin-left: 11px;
 }
+
+.film {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.content {
+    color: #FFF;
+    width: 50%;
+}
+
+.play-button {
+    margin-right: 20%;
+}
+
+.film-description {
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+.film-name-en {
+    margin: 0;
+    font-weight: 400;
+    color: #998689;
+}
+
+.film-name-ru {
+    font-weight: bold;
+    font-size: 26pt;
+    margin: 11px 0 23px;
+}
+
+.additionals {
+    margin-top: 53px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}

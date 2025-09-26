@@ -6,6 +6,9 @@
 body {
     background-color: #621402;
     margin: 0;
+    background-image: url("/imgs/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -52,7 +55,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 63px;
 }
 
 .content {
@@ -65,7 +68,7 @@ header {
 }
 
 .film-description {
-    font-size: 14pt;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -77,7 +80,7 @@ header {
 
 .film-name-ru {
     font-weight: bold;
-    font-size: 26pt;
+    font-size: 36pt;
     margin: 11px 0 23px;
 }
 
@@ -87,3 +90,97 @@ header {
     align-items: center;
     gap: 34px;
 }
+
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #FFF;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    gap: 9.5px;
+}
+
+.rate {
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.separator {
+    margin-top: 69.5px;
+    border: none;
+    background-color: #ffffff80;
+    height: 1px;
+}
+
+.booking {
+    display: flex;
+}
+
+.block-header {
+    margin: 49px 0 20px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.dates {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-container {
+    display: flex;
+    gap: 15px;
+
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 28px;
+    border: 1px solid #ffffff80;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF;
+}
+
+.mont {
+    font-size: 16px;
+}
+
+.number {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.day {
+    font-size: 15px;
+}
+
+.selector {
+    display: block;
+    background-color: #884637;
+    border: 1px solid #ffffff80;
+    border-radius: 3px;
+    color: #FFF;
+    appearance: none;
+    padding: 15px
+}
+
+.selector:focus {
+    outline: none;
+}
+
+.cinema {
+    margin: 0 30px 0 95px;
+}
+
+.--cinema {
+    width: 470px;
+}
+
+

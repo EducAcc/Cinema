@@ -6,10 +6,9 @@
 body {
     background-color: #621402;
     margin: 0;
-    padding: 0;
-    background-image: url("../imgs/bg.png");
+    background-image: url("/imgs/bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center top;
     height: 100vh; 
     overflow-y: auto; 
 }
@@ -35,7 +34,7 @@ header {
 }
 
 .wrapper {
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -122,6 +121,7 @@ header {
 
 .booking {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .block-header {
@@ -257,7 +257,4 @@ header {
         width: 100%;
     }
 }
-
-
-
 

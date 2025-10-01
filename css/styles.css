@@ -7,7 +7,7 @@ body {
     background-color: #621402;
     margin: 0;
     padding: 0;
-    background-image: url("./imgs/bg.png");
+    background-image: url(".../imgs/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh; 
@@ -257,5 +257,6 @@ header {
         width: 100%;
     }
 }
+
 
 

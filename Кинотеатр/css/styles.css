@@ -7,8 +7,10 @@ body {
     background-color: #621402;
     margin: 0;
     background-image: url("/imgs/bg.png");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh; 
+    overflow-y: auto; 
 }
 
 header {
@@ -146,6 +148,8 @@ header {
     border-radius: 5px;
     text-align: center;
     color: #FFF;
+    transition: background-color 0.2s;
+    cursor: pointer;
 }
 
 .mont {
@@ -162,13 +166,12 @@ header {
 }
 
 .selector {
-    display: block;
     background-color: #884637;
     border: 1px solid #ffffff80;
     border-radius: 3px;
     color: #FFF;
-    appearance: none;
-    padding: 15px
+    padding: 15px;
+    margin-top: 20px;
 }
 
 .selector:focus {
@@ -180,7 +183,77 @@ header {
 }
 
 .--cinema {
-    width: 470px;
+    width: 400px;
 }
 
+.date:hover {
+    background-color: #fe8e05;
+    color: #621402;
+}
+
+.scheme { 
+    background-color: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+    margin: 63px;
+}
+
+.scheme path:not(.light) {
+    fill: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+    fill: #fe8e05;
+}
+
+.price {
+    padding: 20px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+.price-label { 
+    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price-tag {
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.button {
+    display: block;
+    background-color: #fe8e05;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px 52px;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 960px;
+    }
+
+    .cinema {
+        width: 100%;
+    }
+}
 

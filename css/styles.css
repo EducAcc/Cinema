@@ -6,9 +6,10 @@
 body {
     background-color: #621402;
     margin: 0;
-    background-image: url("imgs/bg.png");
+    background-image: url("../imgs/bg.png");
     background-repeat: no-repeat;
     background-position: center top;
+    backgound-size: cover;
     height: 100vh; 
     overflow-y: auto; 
 }
@@ -256,5 +257,6 @@ header {
         width: 100%;
     }
 }
+
 
 
